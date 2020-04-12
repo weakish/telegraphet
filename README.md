@@ -44,7 +44,7 @@ telegraph requires an account to create a new page.
 telegraph --init PICKUP_A_USERNAME
 ```
 
-If you already has a telegraph, you can setup the access token via environment variable or configuration file.
+If you already have a telegraph, you can setup the access token via environment variable or configuration file.
 
 ```shell script
 # config file
