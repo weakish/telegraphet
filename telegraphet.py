@@ -15,6 +15,7 @@ def auth_token() -> str:
             f = open(os.path.expanduser('~/.config/telegraphet/config.json'))
         except OSError:
             typer.echo("Telegra.ph access token not found!\nRun `telegraphet --init` to create a new one.")
+            raise typer.Exit()
         else:
             with f:
                 config = json.load(f)
